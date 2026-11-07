@@ -9,16 +9,17 @@ compatibility_flags = ["nodejs_compat"]
 # ws目录
 WS_PATH = "ws"
 
-# 转发，0为关闭，1为开启
-EASYTIER_DISABLE_RELAY = "0"
+# "1" 开启纯 P2P，默认 "0"
+EASYTIER_DISABLE_RELAY = "1"
 
+# "0" 关闭 RPC 压缩（调试用），默认 "1"
 EASYTIER_COMPRESS_RPC = "1"
 
 # Workers地域，参考README.md
 LOCATION_HINT = "apac"
 
 # 私有模式：填入与客户端相同的网络名称。留空则允许任何人连接
-EASYTIER_NETWORK_NAME = "cloudflare edge"
+EASYTIER_NETWORK_NAME = "my12345"
 
 # 延迟优先模式：设为 "1" 开启，开启后中继发出的包会带上特权标志位，加速路由收敛
 EASYTIER_LATENCY_FIRST = "1"
